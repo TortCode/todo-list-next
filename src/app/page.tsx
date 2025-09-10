@@ -2,7 +2,7 @@
 
 import {useEffect, useState} from "react";
 import {Todo} from "@prisma/client";
-import TodoItem, from "@/components/TodoItem";
+import TodoItem from "@/components/TodoItem";
 import NewTodoForm from "@/components/NewTodoForm";
 
 export default function Home() {
@@ -83,7 +83,7 @@ export default function Home() {
 
   return (
     <div className="font-sans min-h-screen p-8 pb-20 sm:p-20">
-      <h1 className="text-3xl mb-4">Todo List</h1>
+      <h1 className="text-4xl mb-4">Todo List</h1>
       {todos.map((todo) => (
         <TodoItem
           key={todo.id}
